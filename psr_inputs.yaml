@@ -1,0 +1,13 @@
+---			
+app:			
+ name: psr_inputs	
+ branches:			
+  dev: dev			
+  prod: prod			
+ deploy to:			
+  -forwarder			
+ serverclasses:			
+  -name: psr_myhosts			
+   restartSplunkweb: false			
+   restartSplunkd: true			
+   stateonClient: enabled			
